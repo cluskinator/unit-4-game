@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Crystal Collector
+    </title>
+
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body background="assets/images/cloudy-day.png" style="font-family: serif">
+
+    <div class="container">
+
+        <div class="row">   
+            
+            <div class="col-md-8">
+                <div class="card" style="background-color: chocolate">
+                    <h3 class="card-header" style="color: white"><b>CrystalsCollector!</b></h3>
+                <br>    
+
+                <div class="card-body" style="color: green; background-color: papayawhip;">
+                <b>You will be given a random number at the start of the game.  
+                <br>
+                <br>
+                There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+                <br>
+                <br>
+                You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                <br>
+                <br>
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                <br>
+                Each time when the game starts, the game will change the values of each crystal.
+                <br>
+                <br>
+                </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class ="row">
+            <div class="col-md-4 bg-success" style="color: purple" id="thing">
+            <span id="score"></span>
+            <br>
+            <br>
+            </div>
+            <div class="col-md-2" id="winslosses" style="margin-left: 10px; background-color:cyan">
+            Wins: <span id = "wins"></span>
+            <br>
+            <br>
+            Losses: <span id = "losses"></span>
+            </div>
+    </div>
+                
+    <div class="crystals">
+        <br>
+        <button id="crystal1" class="btn-light " value=""><img src="assets/images/greengem.png" style="height: 100px; width: 100px"></button>
+        <button id="crystal2" class="btn-light" value=""><img src="assets/images/orangegem.png" style="height: 100px; width: 100px"></button>
+        <button id="crystal3" class="btn-light" value=""><img src="assets/images/yellowgem.jpeg" style="height: 100px; width: 100px"></button>
+        <button id="crystal4" class="btn-light" value=""><img src="assets/images/redgem.png" style="height: 100px; width: 100px"></button>
+        <br>
+    </div> 
+    
+    <div class ="row">
+        <div class="col-md-4" style="background-color: lightseagreen; margin-top: 20px; margin-bottom: 10px">
+        Your total score is:
+        <br>
+        <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" style="background-color:lightseagreen">
+        <span id="currentScore" style="font: 20"></span>
+        </div>
+    </div>
+</div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
